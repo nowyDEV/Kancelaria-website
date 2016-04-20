@@ -42,6 +42,7 @@ figcaption {
 }
 
 nav.navbar-inverse {
+    font-family: "Slabo 13px", serif;
     background: transparent;
     color: #ffffff;
     position: fixed;
@@ -201,10 +202,23 @@ section.module.parallax h1 {
     font-weight: 700;
     text-transform: uppercase;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 section.module.parallax .img-content {
     text-align: center;
+    margin-top: 146px;
+}
+
+section.module.parallax .img-content button {
+    color: #fff;
+    background: transparent;
+}
+
+section.module.parallax .img-content button:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
 }
 
 
