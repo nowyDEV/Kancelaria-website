@@ -5,22 +5,6 @@ $(document).ready(function() {
    var servicesTop = $('.services').offset().top;
    var winHeight = $(window).height();
 
-//SERVICES FLOATING
-function services(x) {
-    var offset,
-        goal = servicesTop - winHeight / 8;
-
-    if (x < goal) {
-        offset = Math.min(0.005 * Math.pow(x - goal, 2), winHeight);
-    }
-    else {
-        offset = 0;
-    }
-
-    $('.service1').css({'transform': 'translate('+ -offset + 'px, '+ offset * 0.2 + 'px)'});
-    $('.service3').css({'transform': 'translate('+ offset + 'px, '+ offset * 0.2 + 'px)'});
-}
-
 //WINDOW USER SCROLLING
 
 //CERTIFICATES DISPLAY
@@ -53,8 +37,6 @@ $(window).scroll(function() {
             }, 150 * (event + 1));
         });
     }
-
-    services(userScroll);
 
 });
 });

@@ -185,7 +185,7 @@ div.container.certificates  {
 
 section.module.parallax {
     height: 400px;
-    background: center center no-repeat fixed;
+    background: url("../images/accounting.jpg") center center no-repeat fixed;
     background-size: cover;
     -webkit-transition: background-image 0.4s;
     -moz-transition: background-image 0.4s;
@@ -196,18 +196,18 @@ section.module.parallax {
 }
 
 section.module.parallax h1 {
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 48px;
-    line-height: 400px;
     font-weight: 700;
-    text-align: center;
     text-transform: uppercase;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-section.module.parallax-2 {
-    background-image: url("../images/accounting.jpg");
+section.module.parallax .img-content {
+    text-align: center;
 }
+
+
 
 /*#####################################################################*/
 
@@ -240,17 +240,6 @@ div.services {
     font-size: 16px;
 }
 
-article.service1 {
-    transform: translate(100px, 20);
-}
-
-article.service2 {
-    z-index: 2;
-}
-
-article.service3 {
-    transform: translate(-100px, 20);
-}
 
 /*###########################################################*/
 /*###########################################################*/
