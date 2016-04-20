@@ -84,7 +84,7 @@ header ul.nav {
 
 header {
     position: relative;
-    background:  url(../images/main_foto_org.JPG) top left no-repeat fixed;
+    background:  url("../images/main_foto_org.JPG") top left no-repeat fixed;
     z-index: 1;
     background-size: 100% 100%, cover;
     height: 760px;
@@ -111,7 +111,7 @@ section.main-content {
 .aboutPhoto {
     height: 347px;
     width: 347px;
-    background: url(../images/businessman.png) top center no-repeat fixed;
+    background: url("../images/businessman.png") top center no-repeat fixed;
     border-radius: 50%;
 }
 
@@ -207,7 +207,6 @@ section.module.parallax h1 {
 
 section.module.parallax-2 {
     background-image: url("../images/accounting.jpg");
-
 }
 
 /*#####################################################################*/
