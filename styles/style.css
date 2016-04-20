@@ -1,0 +1,301 @@
+/*########################  GENERAL ##########################*/
+body {
+    font-family: "Roboto", sans-serif;
+    height: 3000px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+/*########################  HEADER ##########################*/
+
+/*########################  NAVBAR ##########################*/
+
+.navbar-header h1 {
+    color: #fff;
+}
+
+.navbar-header h1:hover {
+    color: #9d9d9d;
+}
+
+nav.navbar-inverse {
+    background: transparent;
+    color: #ffffff;
+    position: fixed;
+    border: none;
+    margin-bottom: 0;
+    height: 90px;
+    z-index: 2;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #9d9d9d;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+    background: none;
+}
+
+.navbar-brand {
+    padding: 0 15px;
+}
+
+header h1 {
+    font-size: 22px;
+    text-align: center;
+}
+
+header ul.nav {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*#####################################################################*/
+
+/*########################  MAIN IMAGE ##########################*/
+
+header {
+    position: relative;
+    background:  url("../images/main_foto_org.jpg") top left no-repeat fixed;
+    z-index: 1;
+    background-size: 100% 100%, cover;
+    height: 760px;
+    width: 100%;
+    box-shadow: inset 0 0 100px #000;
+}
+
+/*#####################################################################*/
+/*#####################################################################*/
+
+/*########################  MAIN CONTENT ##########################*/
+
+section.main-content {
+    position: relative;
+    height: 2150px;
+    margin-bottom: 360px;
+    padding-top: 100px;
+    background: #fff;
+    z-index: 2;
+}
+
+/*########################  ABOUT SECTION ##########################*/
+
+.aboutPhoto {
+    height: 347px;
+    width: 347px;
+    background: url(../images/businessman.png) no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    border-radius: 50%;
+}
+
+.aboutText {
+    padding: 20px 0;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.aboutText h2 {
+    font-size: 22px;
+    margin-top: 12px;
+}
+
+.aboutText p {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 1.6s ease-in-out;
+}
+
+.aboutText p.display {
+    opacity: 1;
+    transform: translateX(0px);
+
+}
+
+/*#####################################################################*/
+
+/*########################  CERTIFICATE IMAGES ##########################*/
+
+div.container.certificates  {
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.certificates a {
+    width: 210px;
+    height: 315px;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.certificates a img {
+    transform: scale(1);
+}
+
+.certificates a:hover figcaption {
+    left: 0;
+}
+
+.certificates a:hover img {
+    display: block;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.certificates a.display {
+    opacity: 1;
+    transform: translateX(0px);
+
+}
+
+/*#####################################################################*/
+
+/*########################  PARALLAX EFFECT ##########################*/
+
+section.module.parallax {
+    height: 400px;
+    background-position: center center;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: background-image 0.4s;
+    -moz-transition: background-image 0.4s;
+    -o-transition: background-image 0.4s;
+    transition: background-image 0.4s;
+    overflow: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+section.module.parallax h1 {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 48px;
+    line-height: 400px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section.module.parallax-2 {
+    background-image: url("../images/accounting.jpg");
+
+}
+
+/*#####################################################################*/
+
+/*########################  SERVICES SECTION ##########################*/
+
+div.services {
+    height: 400px;
+    margin-top: 50px;
+}
+
+.services article {
+    padding: 20px 20px;
+    background: #fff;
+    position: relative;
+    height: 300px;
+}
+
+.services article li {
+    line-height: 20px;
+}
+
+.services article h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.services article h4 {
+    font-size: 16px;
+}
+
+article.service1 {
+    transform: translate(100px, 20);
+}
+
+article.service2 {
+    z-index: 2;
+}
+
+article.service3 {
+    transform: translate(-100px, 20);
+}
+
+/*###########################################################*/
+/*###########################################################*/
+
+/*########################  FOOTER ##########################*/
+
+footer {
+    background: rgba(0, 0, 0, 0) url("../images/dark_leather.png") repeat scroll 0 0;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 25px 0;
+}
+
+footer h4 {
+    text-align: center
+}
+
+footer div.footer-left {
+    height: 286px;
+    line-height: 24px;
+}
+
+
+footer div.footer-center {
+    border-left: 1px solid #fff;
+    height: 286px;
+    line-height: 24px;
+}
+
+footer div.google-map {
+    padding: 15px 15px;
+    box-sizing: border-box;
+    border-left: 1px solid #fff;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+/*###########################################################*/
