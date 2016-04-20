@@ -84,7 +84,7 @@ header ul.nav {
 
 header {
     position: relative;
-    background:  url("../images/main_foto_org.JPG") top left no-repeat fixed;
+    background:  url(../images/main_foto_org.JPG) top left no-repeat fixed;
     z-index: 1;
     background-size: 100% 100%, cover;
     height: 760px;
@@ -111,9 +111,7 @@ section.main-content {
 .aboutPhoto {
     height: 347px;
     width: 347px;
-    background: url(../images/businessman.png) no-repeat;
-    background-position: top center;
-    background-attachment: fixed;
+    background: url(../images/businessman.png) top center no-repeat fixed;
     border-radius: 50%;
 }
 
@@ -187,9 +185,7 @@ div.container.certificates  {
 
 section.module.parallax {
     height: 400px;
-    background-position: center center;
-    background-attachment:fixed;
-    background-repeat: no-repeat;
+    background: center center no-repeat fixed;
     background-size: cover;
     -webkit-transition: background-image 0.4s;
     -moz-transition: background-image 0.4s;
