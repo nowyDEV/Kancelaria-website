@@ -103,7 +103,7 @@ section.main-content {
     height: 2150px;
     margin-bottom: 360px;
     padding-top: 100px;
-    background: #fff;
+    background: rgb(247, 243, 223);
     z-index: 2;
 }
 
@@ -198,7 +198,7 @@ section.module.parallax {
 
 section.module.parallax h1 {
     color: rgba(255, 255, 255, 0.8);
-    font-size: 48px;
+    font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
