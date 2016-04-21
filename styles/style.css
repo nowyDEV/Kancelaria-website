@@ -34,7 +34,8 @@ figcaption {
 
 
 div.navbar-header  {
-    height: 90px;
+    position: relative;
+    z-index: 1;
 }
 
 .navbar-header h1 {
@@ -67,7 +68,7 @@ div#navbar-collapse {
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color: red;
+    color: #fff;
 }
 
 .navbar-inverse .navbar-nav>.active>a {
@@ -75,8 +76,7 @@ div#navbar-collapse {
 }
 
 .navbar-brand {
-    padding: 0 15px
-    height: 100%;
+    padding: 0 15px;
 }
 
 header h1 {
