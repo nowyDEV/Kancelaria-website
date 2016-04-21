@@ -343,6 +343,11 @@ footer .footer-map {
         border-bottom: 1px dotted #fff;
         height: 100px;
     }
+
+    footer .footer-map {
+        border-left: none;
+    }
+
     main {
         margin-bottom: 80px;
     }
