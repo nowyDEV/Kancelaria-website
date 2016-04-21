@@ -340,6 +340,7 @@ footer .footer-map {
     }
 
     footer .footer-center {
+        border-left: none;
         border-bottom: 1px dotted #fff;
         height: 100px;
     }
