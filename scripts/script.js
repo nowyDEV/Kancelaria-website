@@ -12,7 +12,7 @@ $(window).scroll(function() {
     var userScroll = $(this).scrollTop();
 
     //NAVBAR CHANGE ON SCROLL
-    if (userScroll > $('#header').height() ) {
+    if (userScroll > $('header').height() ) {
         $('header ul.nav').css({
             background: "rgba(0, 0, 0, 0.4)",
             marginTop: 0 + "px"
