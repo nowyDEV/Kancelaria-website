@@ -329,6 +329,9 @@ footer .footer-map {
     div#navbar-collapse {
         right: 0;
     }
+    .container {
+        width: 100vh;
+    }
 
     footer {
         position: relative;
