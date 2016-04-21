@@ -351,6 +351,10 @@ footer .footer-map {
     main {
         margin-bottom: 80px;
     }
+
+    header {
+        height: 100vh;
+    }
 }
 
 @media (min-width: 768px) {
