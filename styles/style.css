@@ -93,7 +93,7 @@ header {
     z-index: 3;
     background:  url("../images/mainFoto.jpg") top left no-repeat fixed;
     background-size: 100% 100%, cover;
-    min-height: 600px;
+    min-height: 450px;
     width: 100%;
     box-shadow: inset 0 0 100px #000;
 }
@@ -150,6 +150,12 @@ main {
 .certificates  {
     box-sizing: border-box;
     margin-bottom: 50px;
+}
+
+.certificate {
+    margin: 0 30px;
+    display: inline-block;
+    font-size: 12px;
 }
 
 .certificates a {
@@ -294,9 +300,30 @@ footer .footer-map {
     text-align: center;
 }
 
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 46.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
 
 /*###########################################################*/
 /*########################  MEDIA QUERIES ##########################*/
+
+@media (max-width: 400px) {
+    .aboutPhoto {
+        height: 247px;
+        width: 247px;
+    }
+}
 
 @media (max-width: 768px) {
     div#navbar-collapse {
