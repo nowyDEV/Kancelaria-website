@@ -1,7 +1,6 @@
 /*########################  GENERAL ##########################*/
 body {
     font-family: "Roboto", sans-serif;
-    height: 3000px;
 }
 
 a {
@@ -11,10 +10,6 @@ a {
 
 a:hover {
     cursor: pointer;
-}
-
-h1 {
-    text-align: center;
 }
 
 figcaption {
@@ -32,14 +27,11 @@ figcaption {
 
 /*########################  NAVBAR ##########################*/
 
-
-div.navbar-header  {
-    position: relative;
-    z-index: 1;
-    margin-bottom: 60px;
+.navbar-inverse .navbar-brand {
+    color: #fff;
 }
 
-.navbar-header h1 {
+.navbar-inverse .navbar-nav>li>a {
     color: #fff;
 }
 
@@ -47,29 +39,30 @@ div.navbar-header  {
     color: rgba(255, 255, 255, 0.8);
 }
 
-nav.navbar-inverse {
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-header  {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 35px;
+}
+
+.navbar-inverse {
     font-family: "Slabo 13px", serif;
     background: transparent;
-    color: #ffffff;
     position: relative;
     border: none;
     margin-bottom: 0;
     height: 90px;
 }
 
-div#navbar-collapse {
+#navbar-collapse {
     position: fixed;
     width: inherit;
     padding-right: 30px;
     padding-left: 15px;
-}
-
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.navbar-inverse .navbar-nav>li>a {
-    color: #fff;
 }
 
 .navbar-inverse .navbar-nav>.active>a {
@@ -82,7 +75,6 @@ div#navbar-collapse {
 
 header h1 {
     font-size: 22px;
-    text-align: center;
 }
 
 header ul.nav {
@@ -111,11 +103,10 @@ header {
 
 /*########################  MAIN CONTENT ##########################*/
 
-section.main-content {
+main {
     position: relative;
-    height: 2100px;
-    margin-bottom: 360px;
-    padding-top: 100px;
+    margin-bottom: 336px;
+    padding-top: 80px;
     background: #fff;
     z-index: 2;
 }
@@ -150,14 +141,13 @@ section.main-content {
 .aboutText p.display {
     opacity: 1;
     transform: translateX(0px);
-
 }
 
 /*#####################################################################*/
 
 /*########################  CERTIFICATE IMAGES ##########################*/
 
-div.container.certificates  {
+.certificates  {
     box-sizing: border-box;
     margin-bottom: 50px;
 }
@@ -170,7 +160,6 @@ div.container.certificates  {
     transition: all 0.5s ease-in-out;
     position: relative;
     overflow: hidden;
-
 }
 
 .certificates a img {
@@ -190,14 +179,13 @@ div.container.certificates  {
 .certificates a.display {
     opacity: 1;
     transform: translateX(0px);
-
 }
 
 /*#####################################################################*/
 
 /*########################  PARALLAX EFFECT ##########################*/
 
-section.module.parallax {
+.services .module.parallax {
     height: 400px;
     background: url("../images/accounting.jpg") center center no-repeat fixed;
     background-size: cover;
@@ -209,7 +197,7 @@ section.module.parallax {
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-section.module.parallax h1 {
+.services .module.parallax h1 {
     color: rgba(255, 255, 255, 0.8);
     font-size: 30px;
     font-weight: 700;
@@ -219,30 +207,27 @@ section.module.parallax h1 {
     margin-bottom: 10px;
 }
 
-section.module.parallax .img-content {
+.services .module.parallax .img-content {
     text-align: center;
     margin-top: 146px;
 }
 
-section.module.parallax .img-content button {
+.services .module.parallax .img-content button {
     color: #fff;
     background: transparent;
 }
 
-section.module.parallax .img-content button:hover {
+.services .module.parallax .img-content button:hover {
     background: rgba(255, 255, 255, 0.8);
     color: #000;
 }
-
-
 
 /*#####################################################################*/
 
 /*########################  SERVICES SECTION ##########################*/
 
-div.services {
-    height: 400px;
-    margin-top: 50px;
+.services .services-text {
+    padding: 50px 0;
 }
 
 .services article {
@@ -286,28 +271,29 @@ footer h4 {
     text-align: center
 }
 
-footer div.footer-left {
+footer ul {
+    list-style: none;
+}
+
+footer .footer-left {
     height: 286px;
     line-height: 24px;
 }
 
 
-footer div.footer-center {
+footer .footer-center {
     border-left: 1px solid #fff;
     height: 286px;
     line-height: 24px;
 }
 
-footer div.google-map {
+footer .footer-map {
     padding: 15px 15px;
     box-sizing: border-box;
     border-left: 1px solid #fff;
     text-align: center;
 }
 
-footer ul {
-    list-style: none;
-}
 
 /*###########################################################*/
 /*########################  MEDIA QUERIES ##########################*/
